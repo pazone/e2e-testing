@@ -124,6 +124,14 @@ func inputs(integration string) []kibana.Input {
 						Value: "host",
 						Type:  "localhost:8200",
 					},
+					"tags": {
+						Value: []string{},
+						Type:  "text",
+					},
+					"preserve_original_event": {
+						Value: false,
+						Type:  "bool",
+					},
 				},
 			},
 		}
@@ -144,6 +152,14 @@ func inputs(integration string) []kibana.Input {
 							"period": {
 								Value: "1s",
 								Type:  "string",
+							},
+							"tags": {
+								Value: []string{},
+								Type:  "text",
+							},
+							"preserve_original_event": {
+								Value: false,
+								Type:  "bool",
 							},
 						},
 					},

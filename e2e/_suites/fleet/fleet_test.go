@@ -184,6 +184,14 @@ func beforeScenario(fts *FleetTestSuite) {
 							Value: "",
 							Type:  "text",
 						},
+						"tags": {
+							Value: []string{},
+							Type:  "text",
+						},
+						"preserve_original_event": {
+							Value: false,
+							Type:  "bool",
+						},
 					},
 				})
 			} else {
